@@ -34,8 +34,11 @@ models/*.joblib
 models/threshold.json
 
 # Output files
-output/matching_results.tsv
-output/candidate_pairs.tsv
+**/output/matching_results.tsv
+**/output/candidate_pairs.tsv
+**/output/*.tsv
+**/output/*.csv
+**/output/cache/*.joblib
 
 # Logs
 logs/*.log
