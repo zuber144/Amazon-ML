@@ -1,0 +1,20 @@
+# Exact pinned dependency versions for business-entity-resolution
+# Tested & verified on Python 3.12 (Windows / Linux / macOS compatible)
+colorama==0.4.6
+iniconfig==2.3.0
+joblib==1.4.2
+numpy==1.26.4
+packaging==26.3
+pandas==2.2.3
+pip==24.2
+pluggy==1.6.0
+pytest==8.3.3
+python-dateutil==2.9.0.post0
+pytz==2026.4
+rapidfuzz==3.9.7
+scikit-learn==1.5.2
+scipy==1.13.1
+six==1.17.0
+threadpoolctl==3.7.0
+tqdm==4.66.5
+tzdata==2026.4

@@ -1,0 +1,51 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+__MACOSX/
+_MACOSX/
+
+# Model artifacts
+models/*.joblib
+models/threshold.json
+
+# Output files
+output/matching_results.tsv
+output/candidate_pairs.tsv
+
+# Logs
+logs/*.log
+
+# Temp / scratch
+*.tmp
+scratch/
+
+# Large datasets
+dataset/**/*.tsv
+
+# Unwanted source/archive folders
+student_resource/
