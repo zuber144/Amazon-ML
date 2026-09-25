@@ -2,6 +2,7 @@
 .venv/
 venv/
 env/
+.env
 
 # Python
 __pycache__/
@@ -52,3 +53,4 @@ dataset/**/*.tsv
 
 # Unwanted source/archive folders
 student_resource/
+**/dataset/student_resource/dataset/**/*.tsv

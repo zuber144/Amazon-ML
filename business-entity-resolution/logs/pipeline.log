@@ -1,0 +1,417 @@
+[INFO] 2026-09-25 23:23:55 run_pipeline: ============================================================
+[INFO] 2026-09-25 23:23:55 run_pipeline: Business Entity Resolution Pipeline
+[INFO] 2026-09-25 23:23:55 run_pipeline: Mode: train
+[INFO] 2026-09-25 23:23:55 run_pipeline: ============================================================
+[INFO] 2026-09-25 23:23:55 src.pipeline: ============================================================
+[INFO] 2026-09-25 23:23:55 src.pipeline: PIPELINE: TRAIN MODE
+[INFO] 2026-09-25 23:23:55 src.pipeline: ============================================================
+[INFO] 2026-09-25 23:23:55 src.pipeline: [1/6] Loading training data...
+[INFO] 2026-09-25 23:23:55 src.data_loader: Loading training data...
+[INFO] 2026-09-25 23:23:55 src.data_loader: [Source1] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source1.tsv ...
+[INFO] 2026-09-25 23:23:59 src.data_loader: [Source1] Loaded 2206821 records.
+[INFO] 2026-09-25 23:24:01 src.data_loader: [Source2] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source2.tsv ...
+[INFO] 2026-09-25 23:24:13 src.data_loader: [Source2] Loaded 5034616 records.
+[INFO] 2026-09-25 23:24:16 src.data_loader: [Source2] Missing values: business_name=2, business_address=168967
+[INFO] 2026-09-25 23:24:16 src.data_loader: [Source3] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source3.tsv ...
+[INFO] 2026-09-25 23:24:28 src.data_loader: [Source3] Loaded 5285603 records.
+[INFO] 2026-09-25 23:24:31 src.data_loader: [Source3] Missing values: business_name=13, business_address=175916
+[INFO] 2026-09-25 23:24:31 src.data_loader: [GroundTruth] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_ground_truth.tsv ...
+[INFO] 2026-09-25 23:24:34 src.data_loader: [GroundTruth] Loaded 2206821 records.
+[INFO] 2026-09-25 23:24:36 src.data_loader: [GroundTruth] 2206821 rows | 123247 singletons | 2083574 with matches.
+[INFO] 2026-09-25 23:24:36 src.data_loader: Training data loaded: S1=2206821, S2=5034616, S3=5285603, GT=2206821
+[INFO] 2026-09-25 23:24:36 src.pipeline: [2/6] Creating validation split (fraction=0.15)...
+[INFO] 2026-09-25 23:25:12 validation.create_validation: Stratified split: val singletons=18487, val non-singletons=312536
+[INFO] 2026-09-25 23:25:16 validation.create_validation: Validation split (seed=42, fraction=0.15): train=1875798, val=331023 S1 entities.
+[INFO] 2026-09-25 23:25:16 src.pipeline: Train: 1875798 S1 entities | Val: 331023 S1 entities
+[INFO] 2026-09-25 23:25:16 src.pipeline: [3/6] Preprocessing...
+[INFO] 2026-09-25 23:25:16 src.preprocessing: Preprocessing all sources...
+[INFO] 2026-09-25 23:25:16 src.preprocessing: [Source1] Preprocessing 1875798 records...
+[INFO] 2026-09-25 23:27:07 src.preprocessing: [Source1] Preprocessing complete.
+[INFO] 2026-09-25 23:27:07 src.preprocessing: [Source2] Preprocessing 5034616 records...
+[INFO] 2026-09-25 23:32:08 src.preprocessing: [Source2] Preprocessing complete.
+[INFO] 2026-09-25 23:32:08 src.preprocessing: [Source3] Preprocessing 5285603 records...
+[INFO] 2026-09-25 23:44:24 run_pipeline: ============================================================
+[INFO] 2026-09-25 23:44:24 run_pipeline: Business Entity Resolution Pipeline
+[INFO] 2026-09-25 23:44:24 run_pipeline: Mode: train
+[INFO] 2026-09-25 23:44:24 run_pipeline: ============================================================
+[INFO] 2026-09-25 23:44:24 src.pipeline: ============================================================
+[INFO] 2026-09-25 23:44:24 src.pipeline: PIPELINE: TRAIN MODE
+[INFO] 2026-09-25 23:44:24 src.pipeline: ============================================================
+[INFO] 2026-09-25 23:44:24 src.pipeline: [1/6] Loading training data...
+[INFO] 2026-09-25 23:44:24 src.data_loader: Loading training data...
+[INFO] 2026-09-25 23:44:24 src.data_loader: [Source1] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source1.tsv ...
+[INFO] 2026-09-25 23:44:29 src.data_loader: [Source1] Loaded 2206821 records.
+[INFO] 2026-09-25 23:44:31 src.data_loader: [Source2] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source2.tsv ...
+[INFO] 2026-09-25 23:44:46 src.data_loader: [Source2] Loaded 5034616 records.
+[INFO] 2026-09-25 23:44:50 src.data_loader: [Source2] Missing values: business_name=2, business_address=168967
+[INFO] 2026-09-25 23:44:50 src.data_loader: [Source3] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source3.tsv ...
+[INFO] 2026-09-25 23:45:03 src.data_loader: [Source3] Loaded 5285603 records.
+[INFO] 2026-09-25 23:45:06 src.data_loader: [Source3] Missing values: business_name=13, business_address=175916
+[INFO] 2026-09-25 23:45:06 src.data_loader: [GroundTruth] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_ground_truth.tsv ...
+[INFO] 2026-09-25 23:45:09 src.data_loader: [GroundTruth] Loaded 2206821 records.
+[INFO] 2026-09-25 23:45:10 src.data_loader: [GroundTruth] 2206821 rows | 123247 singletons | 2083574 with matches.
+[INFO] 2026-09-25 23:45:10 src.data_loader: Training data loaded: S1=2206821, S2=5034616, S3=5285603, GT=2206821
+[INFO] 2026-09-25 23:45:10 src.pipeline: [2/6] Creating validation split (fraction=0.15)...
+[INFO] 2026-09-25 23:45:45 validation.create_validation: Stratified split: val singletons=18487, val non-singletons=312536
+[INFO] 2026-09-25 23:45:49 validation.create_validation: Validation split (seed=42, fraction=0.15): train=1875798, val=331023 S1 entities.
+[INFO] 2026-09-25 23:45:49 src.pipeline: Train: 1875798 S1 entities | Val: 331023 S1 entities
+[INFO] 2026-09-25 23:45:49 src.pipeline: [3/6] Preprocessing...
+[INFO] 2026-09-25 23:45:49 src.preprocessing: Preprocessing all sources...
+[INFO] 2026-09-25 23:45:49 src.preprocessing: [Source1] Preprocessing 1875798 records...
+[INFO] 2026-09-25 23:48:02 src.preprocessing: [Source1] Preprocessing complete.
+[INFO] 2026-09-25 23:48:02 src.preprocessing: [Source2] Preprocessing 5034616 records...
+[INFO] 2026-09-25 23:52:54 src.preprocessing: [Source2] Preprocessing complete.
+[INFO] 2026-09-25 23:52:54 src.preprocessing: [Source3] Preprocessing 5285603 records...
+[INFO] 2026-09-25 23:58:02 src.preprocessing: [Source3] Preprocessing complete.
+[INFO] 2026-09-25 23:58:02 src.preprocessing: All sources preprocessed.
+[INFO] 2026-09-25 23:58:02 src.preprocessing: [Source1_val] Preprocessing 331023 records...
+[INFO] 2026-09-25 23:58:23 src.preprocessing: [Source1_val] Preprocessing complete.
+[INFO] 2026-09-25 23:58:23 src.pipeline: [4/6] Generating training candidates...
+[INFO] 2026-09-25 23:58:23 src.candidate_generation: Starting candidate generation with strategies: ['exact_name', 'token_name', 'tfidf_name', 'token_address']
+[INFO] 2026-09-25 23:58:42 src.candidate_generation: Total candidate pool: 10320219 records (S2=5034616, S3=5285603)
+[INFO] 2026-09-25 23:58:42 src.candidate_generation: Running blocking strategy: exact_name
+[INFO] 2026-09-25 23:58:42 src.blocking: [Blocking:exact_name] Building lookup...
+[INFO] 2026-09-25 23:59:13 src.blocking: [Blocking:exact_name] Generated 19797961 pairs.
+[INFO] 2026-09-25 23:59:14 src.candidate_generation: Strategy 'exact_name' contributed 19797961 new pairs (total: 19797961).
+[INFO] 2026-09-25 23:59:14 src.candidate_generation: Running blocking strategy: token_name
+[INFO] 2026-09-25 23:59:14 src.blocking: [Blocking:token_name] Building inverted index on candidates...
+[ERROR] 2026-09-26 00:00:22 src.candidate_generation: Blocking strategy 'token_name' failed: 
+Traceback (most recent call last):
+  File "E:\New folder\Amazon-ML\business-entity-resolution\src\candidate_generation.py", line 66, in generate_candidates
+    pairs = blocking.token_name_blocking(
+        s1, candidates, min_shared=config.TOKEN_OVERLAP_MIN_SHARED
+    )
+  File "E:\New folder\Amazon-ML\business-entity-resolution\src\blocking.py", line 143, in token_name_blocking
+    shared_counter[(s1_id, cand_id)] += 1
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+MemoryError
+[INFO] 2026-09-26 00:16:21 run_pipeline: ============================================================
+[INFO] 2026-09-26 00:16:21 run_pipeline: Business Entity Resolution Pipeline
+[INFO] 2026-09-26 00:16:21 run_pipeline: Mode: train
+[INFO] 2026-09-26 00:16:21 run_pipeline: Train sample size override: 1000
+[INFO] 2026-09-26 00:16:21 run_pipeline: Val sample size override: 200
+[INFO] 2026-09-26 00:16:21 run_pipeline: ============================================================
+[INFO] 2026-09-26 00:16:21 src.pipeline: ============================================================
+[INFO] 2026-09-26 00:16:21 src.pipeline: PIPELINE: TRAIN MODE
+[INFO] 2026-09-26 00:16:21 src.pipeline: ============================================================
+[INFO] 2026-09-26 00:16:21 src.pipeline: [1/6] Loading training data...
+[INFO] 2026-09-26 00:16:21 src.data_loader: Loading training data...
+[INFO] 2026-09-26 00:16:21 src.data_loader: [Source1] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source1.tsv ...
+[INFO] 2026-09-26 00:16:30 src.data_loader: [Source1] Loaded 2206821 records.
+[INFO] 2026-09-26 00:16:33 src.data_loader: [Source2] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source2.tsv ...
+[INFO] 2026-09-26 00:16:55 src.data_loader: [Source2] Loaded 5034616 records.
+[INFO] 2026-09-26 00:17:02 src.data_loader: [Source2] Missing values: business_name=2, business_address=168967
+[INFO] 2026-09-26 00:17:02 src.data_loader: [Source3] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source3.tsv ...
+[INFO] 2026-09-26 00:17:22 src.data_loader: [Source3] Loaded 5285603 records.
+[INFO] 2026-09-26 00:17:26 src.data_loader: [Source3] Missing values: business_name=13, business_address=175916
+[INFO] 2026-09-26 00:17:26 src.data_loader: [GroundTruth] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_ground_truth.tsv ...
+[INFO] 2026-09-26 00:17:29 src.data_loader: [GroundTruth] Loaded 2206821 records.
+[INFO] 2026-09-26 00:17:31 src.data_loader: [GroundTruth] 2206821 rows | 123247 singletons | 2083574 with matches.
+[INFO] 2026-09-26 00:17:31 src.data_loader: Training data loaded: S1=2206821, S2=5034616, S3=5285603, GT=2206821
+[INFO] 2026-09-26 00:17:31 src.pipeline: [2/6] Creating validation split (fraction=0.15)...
+[INFO] 2026-09-26 00:18:19 validation.create_validation: Stratified split: val singletons=18487, val non-singletons=312536
+[INFO] 2026-09-26 00:18:24 validation.create_validation: Validation split (seed=42, fraction=0.15): train=1875798, val=331023 S1 entities.
+[INFO] 2026-09-26 00:18:24 src.pipeline: Subsampling training S1 entities to 1000 (out of 1875798) for fast, memory-safe training...
+[INFO] 2026-09-26 00:18:28 src.pipeline: Subsampling validation S1 entities to 200 (out of 331023) for threshold tuning...
+[INFO] 2026-09-26 00:18:28 src.pipeline: Train: 1000 S1 entities | Val: 200 S1 entities
+[INFO] 2026-09-26 00:18:28 src.pipeline: [3/6] Preprocessing...
+[INFO] 2026-09-26 00:18:28 src.preprocessing: Preprocessing all sources...
+[INFO] 2026-09-26 00:18:28 src.preprocessing: [Source1] Preprocessing 1000 records...
+[INFO] 2026-09-26 00:18:28 src.preprocessing: [Source1] Preprocessing complete.
+[INFO] 2026-09-26 00:18:28 src.preprocessing: [Source2] Preprocessing 5034616 records...
+[INFO] 2026-09-26 00:25:04 src.preprocessing: [Source2] Preprocessing complete.
+[INFO] 2026-09-26 00:25:04 src.preprocessing: [Source2] Saving preprocessed data to cache: E:\New folder\Amazon-ML\business-entity-resolution\output\cache\s2_preprocessed.joblib
+[INFO] 2026-09-26 00:26:33 src.preprocessing: [Source3] Preprocessing 5285603 records...
+[INFO] 2026-09-26 00:34:37 src.preprocessing: [Source3] Preprocessing complete.
+[INFO] 2026-09-26 00:34:37 src.preprocessing: [Source3] Saving preprocessed data to cache: E:\New folder\Amazon-ML\business-entity-resolution\output\cache\s3_preprocessed.joblib
+[INFO] 2026-09-26 00:35:40 src.preprocessing: All sources preprocessed.
+[INFO] 2026-09-26 00:35:40 src.preprocessing: [Source1_val] Preprocessing 200 records...
+[INFO] 2026-09-26 00:35:40 src.preprocessing: [Source1_val] Preprocessing complete.
+[INFO] 2026-09-26 00:35:40 src.pipeline: [4/6] Generating training candidates...
+[INFO] 2026-09-26 00:35:40 src.candidate_generation: Starting candidate generation with strategies: ['exact_name', 'token_name', 'token_address']
+[INFO] 2026-09-26 00:36:03 src.candidate_generation: Total candidate pool: 10320219 records (S2=5034616, S3=5285603)
+[INFO] 2026-09-26 00:36:10 src.candidate_generation: --- Blocking partition: Country='us' (S1=594, Cand=6186873) ---
+[INFO] 2026-09-26 00:36:10 src.candidate_generation: Running blocking strategy: exact_name [Country=us]
+[INFO] 2026-09-26 00:36:10 src.blocking: [Blocking:exact_name] Building lookup...
+[INFO] 2026-09-26 00:36:33 src.blocking: [Blocking:exact_name] Generated 7054 pairs.
+[INFO] 2026-09-26 00:36:34 src.candidate_generation: Strategy 'exact_name' [Country=us] contributed 7054 new pairs (subtotal: 7054).
+[INFO] 2026-09-26 00:36:34 src.candidate_generation: Running blocking strategy: token_name [Country=us]
+[INFO] 2026-09-26 00:36:34 src.blocking: [Blocking:token_name] Building inverted index on candidates...
+[INFO] 2026-09-26 00:36:52 src.blocking: Pruned 689 high-frequency tokens (>2500 occurrences, e.g. ['horizon', 'rice', 'cure', 'transit', 'continental'])
+[INFO] 2026-09-26 00:36:52 src.blocking: [Blocking:token_name] Generated 34938 pairs (min_shared=1).
+[INFO] 2026-09-26 00:36:53 src.candidate_generation: Strategy 'token_name' [Country=us] contributed 34427 new pairs (subtotal: 41481).
+[INFO] 2026-09-26 00:36:53 src.candidate_generation: Running blocking strategy: token_address [Country=us]
+[INFO] 2026-09-26 00:36:53 src.blocking: [Blocking:token_address] Building inverted index on candidates...
+[INFO] 2026-09-26 00:37:17 src.blocking: Pruned 1174 high-frequency tokens (>2500 occurrences, e.g. ['bern', 'geneva', 'danville', '118', '147'])
+[INFO] 2026-09-26 00:37:18 src.blocking: [Blocking:token_address] Generated 5448 pairs (min_shared=2).
+[INFO] 2026-09-26 00:37:18 src.candidate_generation: Strategy 'token_address' [Country=us] contributed 4943 new pairs (subtotal: 46424).
+[INFO] 2026-09-26 00:37:52 src.candidate_generation: --- Blocking partition: Country='india' (S1=406, Cand=4133346) ---
+[INFO] 2026-09-26 00:37:52 src.candidate_generation: Running blocking strategy: exact_name [Country=india]
+[INFO] 2026-09-26 00:37:52 src.blocking: [Blocking:exact_name] Building lookup...
+[INFO] 2026-09-26 00:38:08 src.blocking: [Blocking:exact_name] Generated 2865 pairs.
+[INFO] 2026-09-26 00:38:09 src.candidate_generation: Strategy 'exact_name' [Country=india] contributed 2865 new pairs (subtotal: 2865).
+[INFO] 2026-09-26 00:38:09 src.candidate_generation: Running blocking strategy: token_name [Country=india]
+[INFO] 2026-09-26 00:38:09 src.blocking: [Blocking:token_name] Building inverted index on candidates...
+[INFO] 2026-09-26 00:38:24 src.blocking: Pruned 294 high-frequency tokens (>2500 occurrences, e.g. ['shakti', 'systems', 'educational', 'm/s', 'investments'])
+[INFO] 2026-09-26 00:38:24 src.blocking: [Blocking:token_name] Generated 19559 pairs (min_shared=1).
+[INFO] 2026-09-26 00:38:24 src.candidate_generation: Strategy 'token_name' [Country=india] contributed 19364 new pairs (subtotal: 22229).
+[INFO] 2026-09-26 00:38:24 src.candidate_generation: Running blocking strategy: token_address [Country=india]
+[INFO] 2026-09-26 00:38:24 src.blocking: [Blocking:token_address] Building inverted index on candidates...
+[INFO] 2026-09-26 00:38:53 src.blocking: Pruned 1019 high-frequency tokens (>2500 occurrences, e.g. ['murshidabad', '118', 'nadia', 'calcutta', 'city'])
+[INFO] 2026-09-26 00:38:53 src.blocking: [Blocking:token_address] Generated 15701 pairs (min_shared=2).
+[INFO] 2026-09-26 00:38:54 src.candidate_generation: Strategy 'token_address' [Country=india] contributed 15208 new pairs (subtotal: 37437).
+[INFO] 2026-09-26 00:38:54 src.candidate_generation: Total candidate pairs before post-processing: 83861
+[INFO] 2026-09-26 00:38:55 src.candidate_generation: Capped candidates: 83861 -> 71455 pairs (cap=100 per S1).
+[INFO] 2026-09-26 00:38:55 src.candidate_generation: Candidate generation complete: 71455 pairs, 976 unique S1 entities covered.
+[INFO] 2026-09-26 00:39:17 src.pipeline: Training candidate pairs: 71455
+[INFO] 2026-09-26 00:39:18 validation.evaluate: Candidate recall: 0.6712 (2295 / 3419 true matches covered)
+[INFO] 2026-09-26 00:39:18 src.pipeline: Training candidate recall: 0.6712
+[INFO] 2026-09-26 00:39:18 src.pipeline: [5/6] Extracting features and training model...
+[INFO] 2026-09-26 00:39:23 src.features: Extracting features for 71455 candidate pairs...
+[INFO] 2026-09-26 00:39:43 src.features: Feature extraction complete: 25 features for 71455 pairs.
+[INFO] 2026-09-26 00:39:43 src.pipeline: Labels built: 71455 pairs | 2295 positive (3.2%) | 69160 negative.
+[INFO] 2026-09-26 00:39:43 src.model: Training model on 71455 pairs (2295 positive, 69160 negative)...
+[INFO] 2026-09-26 00:39:43 src.model: Building model: logistic_regression
+[INFO] 2026-09-26 00:39:43 src.model: Training complete.
+[INFO] 2026-09-26 00:39:43 src.model: Model saved to: E:\New folder\Amazon-ML\business-entity-resolution\models\matcher_model.joblib
+[INFO] 2026-09-26 00:39:43 src.pipeline: [6/6] Validating and tuning threshold...
+[INFO] 2026-09-26 00:39:43 src.candidate_generation: Starting candidate generation with strategies: ['exact_name', 'token_name', 'token_address']
+[INFO] 2026-09-26 00:39:45 src.candidate_generation: Total candidate pool: 10320219 records (S2=5034616, S3=5285603)
+[INFO] 2026-09-26 00:39:48 src.candidate_generation: --- Blocking partition: Country='us' (S1=115, Cand=6186873) ---
+[INFO] 2026-09-26 00:39:48 src.candidate_generation: Running blocking strategy: exact_name [Country=us]
+[INFO] 2026-09-26 00:39:48 src.blocking: [Blocking:exact_name] Building lookup...
+[INFO] 2026-09-26 00:40:11 src.blocking: [Blocking:exact_name] Generated 1250 pairs.
+[INFO] 2026-09-26 00:40:12 src.candidate_generation: Strategy 'exact_name' [Country=us] contributed 1250 new pairs (subtotal: 1250).
+[INFO] 2026-09-26 00:40:12 src.candidate_generation: Running blocking strategy: token_name [Country=us]
+[INFO] 2026-09-26 00:40:12 src.blocking: [Blocking:token_name] Building inverted index on candidates...
+[INFO] 2026-09-26 00:40:29 src.blocking: Pruned 689 high-frequency tokens (>2500 occurrences, e.g. ['horizon', 'rice', 'cure', 'transit', 'continental'])
+[INFO] 2026-09-26 00:40:30 src.blocking: [Blocking:token_name] Generated 7165 pairs (min_shared=1).
+[INFO] 2026-09-26 00:40:30 src.candidate_generation: Strategy 'token_name' [Country=us] contributed 7063 new pairs (subtotal: 8313).
+[INFO] 2026-09-26 00:40:30 src.candidate_generation: Running blocking strategy: token_address [Country=us]
+[INFO] 2026-09-26 00:40:30 src.blocking: [Blocking:token_address] Building inverted index on candidates...
+[INFO] 2026-09-26 00:40:54 src.blocking: Pruned 1174 high-frequency tokens (>2500 occurrences, e.g. ['bern', 'geneva', 'danville', '118', '147'])
+[INFO] 2026-09-26 00:40:54 src.blocking: [Blocking:token_address] Generated 1136 pairs (min_shared=2).
+[INFO] 2026-09-26 00:40:54 src.candidate_generation: Strategy 'token_address' [Country=us] contributed 1033 new pairs (subtotal: 9346).
+[INFO] 2026-09-26 00:41:34 src.candidate_generation: --- Blocking partition: Country='india' (S1=85, Cand=4133346) ---
+[INFO] 2026-09-26 00:41:34 src.candidate_generation: Running blocking strategy: exact_name [Country=india]
+[INFO] 2026-09-26 00:41:34 src.blocking: [Blocking:exact_name] Building lookup...
+[INFO] 2026-09-26 00:41:54 src.blocking: [Blocking:exact_name] Generated 510 pairs.
+[INFO] 2026-09-26 00:41:55 src.candidate_generation: Strategy 'exact_name' [Country=india] contributed 510 new pairs (subtotal: 510).
+[INFO] 2026-09-26 00:41:55 src.candidate_generation: Running blocking strategy: token_name [Country=india]
+[INFO] 2026-09-26 00:41:55 src.blocking: [Blocking:token_name] Building inverted index on candidates...
+[INFO] 2026-09-26 00:42:39 src.blocking: Pruned 294 high-frequency tokens (>2500 occurrences, e.g. ['shakti', 'systems', 'educational', 'm/s', 'investments'])
+[INFO] 2026-09-26 00:42:40 src.blocking: [Blocking:token_name] Generated 4241 pairs (min_shared=1).
+[INFO] 2026-09-26 00:42:40 src.candidate_generation: Strategy 'token_name' [Country=india] contributed 4208 new pairs (subtotal: 4718).
+[INFO] 2026-09-26 00:42:40 src.candidate_generation: Running blocking strategy: token_address [Country=india]
+[INFO] 2026-09-26 00:42:40 src.blocking: [Blocking:token_address] Building inverted index on candidates...
+[INFO] 2026-09-26 00:43:22 src.blocking: Pruned 1019 high-frequency tokens (>2500 occurrences, e.g. ['murshidabad', '118', 'nadia', 'calcutta', 'city'])
+[INFO] 2026-09-26 00:43:23 src.blocking: [Blocking:token_address] Generated 3752 pairs (min_shared=2).
+[INFO] 2026-09-26 00:43:24 src.candidate_generation: Strategy 'token_address' [Country=india] contributed 3628 new pairs (subtotal: 8346).
+[INFO] 2026-09-26 00:43:24 src.candidate_generation: Total candidate pairs before post-processing: 17692
+[INFO] 2026-09-26 00:43:24 src.candidate_generation: Capped candidates: 17692 -> 15032 pairs (cap=100 per S1).
+[INFO] 2026-09-26 00:43:24 src.candidate_generation: Candidate generation complete: 15032 pairs, 197 unique S1 entities covered.
+[INFO] 2026-09-26 00:43:52 src.features: Extracting features for 15032 candidate pairs...
+[INFO] 2026-09-26 00:44:11 src.features: Feature extraction complete: 25 features for 15032 pairs.
+[INFO] 2026-09-26 00:44:11 src.pipeline: Labels built: 15032 pairs | 481 positive (3.2%) | 14551 negative.
+[INFO] 2026-09-26 00:44:11 src.threshold: Threshold tuning complete: best_threshold=0.9500, f0_5=0.8204
+[INFO] 2026-09-26 00:44:11 src.threshold: Threshold 0.9500 saved to: E:\New folder\Amazon-ML\business-entity-resolution\models\threshold.json
+[INFO] 2026-09-26 00:44:11 src.postprocessing: Post-processing predictions for 200 S1 entities...
+[INFO] 2026-09-26 00:44:11 src.postprocessing: Post-processing complete: 200 S1 entities | 177 with matches | 23 singletons.
+[INFO] 2026-09-26 00:44:11 validation.evaluate: Entity-level F0.5=0.6956 | Precision=0.7630 | Recall=0.6400 | N=200 | Singletons=8/14 correct
+[INFO] 2026-09-26 00:44:11 src.pipeline: VALIDATION RESULTS: Precision=0.7630 | Recall=0.6400 | F0.5=0.6956
+[INFO] 2026-09-26 00:44:11 src.pipeline: Training pipeline complete in 1670.3 seconds.
+[INFO] 2026-09-26 00:44:56 run_pipeline: Pipeline finished in 1715.2 seconds (28.6 minutes).
+[INFO] 2026-09-26 01:05:49 run_pipeline: ============================================================
+[INFO] 2026-09-26 01:05:49 run_pipeline: Business Entity Resolution Pipeline
+[INFO] 2026-09-26 01:05:49 run_pipeline: Mode: train
+[INFO] 2026-09-26 01:05:49 run_pipeline: ============================================================
+[INFO] 2026-09-26 01:05:49 src.pipeline: ============================================================
+[INFO] 2026-09-26 01:05:49 src.pipeline: PIPELINE: TRAIN MODE
+[INFO] 2026-09-26 01:05:49 src.pipeline: ============================================================
+[INFO] 2026-09-26 01:05:49 src.pipeline: [1/6] Loading training data...
+[INFO] 2026-09-26 01:05:49 src.data_loader: Loading training data...
+[INFO] 2026-09-26 01:05:49 src.data_loader: [Source1] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source1.tsv ...
+[INFO] 2026-09-26 01:05:57 src.data_loader: [Source1] Loaded 2206821 records.
+[INFO] 2026-09-26 01:06:00 src.data_loader: [Source2] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source2.tsv ...
+[INFO] 2026-09-26 01:06:23 src.data_loader: [Source2] Loaded 5034616 records.
+[INFO] 2026-09-26 01:06:30 src.data_loader: [Source2] Missing values: business_name=2, business_address=168967
+[INFO] 2026-09-26 01:06:30 src.data_loader: [Source3] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source3.tsv ...
+[INFO] 2026-09-26 01:06:53 src.data_loader: [Source3] Loaded 5285603 records.
+[INFO] 2026-09-26 01:06:59 src.data_loader: [Source3] Missing values: business_name=13, business_address=175916
+[INFO] 2026-09-26 01:06:59 src.data_loader: [GroundTruth] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_ground_truth.tsv ...
+[INFO] 2026-09-26 01:07:04 src.data_loader: [GroundTruth] Loaded 2206821 records.
+[INFO] 2026-09-26 01:07:06 src.data_loader: [GroundTruth] 2206821 rows | 123247 singletons | 2083574 with matches.
+[INFO] 2026-09-26 01:07:06 src.data_loader: Training data loaded: S1=2206821, S2=5034616, S3=5285603, GT=2206821
+[INFO] 2026-09-26 01:07:06 src.pipeline: [2/6] Creating validation split (fraction=0.15)...
+[INFO] 2026-09-26 01:07:54 validation.create_validation: Stratified split: val singletons=18487, val non-singletons=312536
+[INFO] 2026-09-26 01:07:59 validation.create_validation: Validation split (seed=42, fraction=0.15): train=1875798, val=331023 S1 entities.
+[INFO] 2026-09-26 01:07:59 src.pipeline: Subsampling training S1 entities to 50000 (out of 1875798) for fast, memory-safe training...
+[INFO] 2026-09-26 01:08:04 src.pipeline: Subsampling validation S1 entities to 10000 (out of 331023) for threshold tuning...
+[INFO] 2026-09-26 01:08:04 src.pipeline: Train: 50000 S1 entities | Val: 10000 S1 entities
+[INFO] 2026-09-26 01:08:04 src.pipeline: [3/6] Preprocessing...
+[INFO] 2026-09-26 01:08:04 src.preprocessing: Preprocessing all sources...
+[INFO] 2026-09-26 01:08:04 src.preprocessing: [Source1] Preprocessing 50000 records...
+[INFO] 2026-09-26 01:08:08 src.preprocessing: [Source1] Preprocessing complete.
+[INFO] 2026-09-26 01:08:08 src.preprocessing: [Source2] Loading preprocessed data from cache: E:\New folder\Amazon-ML\business-entity-resolution\output\cache\s2_preprocessed.joblib
+[INFO] 2026-09-26 01:08:35 src.preprocessing: [Source3] Loading preprocessed data from cache: E:\New folder\Amazon-ML\business-entity-resolution\output\cache\s3_preprocessed.joblib
+[INFO] 2026-09-26 01:09:07 src.preprocessing: All sources preprocessed.
+[INFO] 2026-09-26 01:09:07 src.preprocessing: [Source1_val] Preprocessing 10000 records...
+[INFO] 2026-09-26 01:09:09 src.preprocessing: [Source1_val] Preprocessing complete.
+[INFO] 2026-09-26 01:09:09 src.pipeline: [4/6] Generating training candidates...
+[INFO] 2026-09-26 01:09:09 src.candidate_generation: Starting candidate generation with strategies: ['exact_name', 'token_name', 'token_address']
+[INFO] 2026-09-26 01:09:37 src.candidate_generation: Total candidate pool: 10320219 records (S2=5034616, S3=5285603)
+[INFO] 2026-09-26 01:09:53 src.candidate_generation: --- Blocking partition: Country='india' (S1=20054, Cand=4133346) ---
+[INFO] 2026-09-26 01:09:53 src.candidate_generation: Running blocking strategy: exact_name [Country=india]
+[INFO] 2026-09-26 01:09:53 src.blocking: [Blocking:exact_name] Building lookup...
+[INFO] 2026-09-26 01:10:07 src.blocking: [Blocking:exact_name] Generated 136063 pairs.
+[INFO] 2026-09-26 01:10:08 src.candidate_generation: Strategy 'exact_name' [Country=india] contributed 136063 new pairs (subtotal: 136063).
+[INFO] 2026-09-26 01:10:08 src.candidate_generation: Running blocking strategy: token_name [Country=india]
+[INFO] 2026-09-26 01:10:08 src.blocking: [Blocking:token_name] Building inverted index on candidates...
+[INFO] 2026-09-26 01:10:21 src.blocking: Pruned 294 high-frequency tokens (>2500 occurrences, e.g. ['foods', 'pune', 'estates', 'healthcare', 'automobiles'])
+[INFO] 2026-09-26 01:10:25 src.blocking: [Blocking:token_name] Generated 921601 pairs (min_shared=1).
+[INFO] 2026-09-26 01:10:26 src.candidate_generation: Strategy 'token_name' [Country=india] contributed 912806 new pairs (subtotal: 1048869).
+[INFO] 2026-09-26 01:10:26 src.candidate_generation: Running blocking strategy: token_address [Country=india]
+[INFO] 2026-09-26 01:10:26 src.blocking: [Blocking:token_address] Building inverted index on candidates...
+[INFO] 2026-09-26 01:10:55 src.blocking: Pruned 1019 high-frequency tokens (>2500 occurrences, e.g. ['begumpet', 'pune', 'nashik', 'tal', 'kollam'])
+[INFO] 2026-09-26 01:11:12 src.blocking: [Blocking:token_address] Generated 807230 pairs (min_shared=2).
+[INFO] 2026-09-26 01:11:13 src.candidate_generation: Strategy 'token_address' [Country=india] contributed 781502 new pairs (subtotal: 1830371).
+[INFO] 2026-09-26 01:12:21 src.candidate_generation: --- Blocking partition: Country='us' (S1=29946, Cand=6186873) ---
+[INFO] 2026-09-26 01:12:21 src.candidate_generation: Running blocking strategy: exact_name [Country=us]
+[INFO] 2026-09-26 01:12:21 src.blocking: [Blocking:exact_name] Building lookup...
+[INFO] 2026-09-26 01:12:55 src.blocking: [Blocking:exact_name] Generated 306575 pairs.
+[INFO] 2026-09-26 01:12:55 src.candidate_generation: Strategy 'exact_name' [Country=us] contributed 306575 new pairs (subtotal: 306575).
+[INFO] 2026-09-26 01:12:55 src.candidate_generation: Running blocking strategy: token_name [Country=us]
+[INFO] 2026-09-26 01:12:55 src.blocking: [Blocking:token_name] Building inverted index on candidates...
+[INFO] 2026-09-26 01:13:18 src.blocking: Pruned 689 high-frequency tokens (>2500 occurrences, e.g. ['foods', 'wheeler', 'way', 'school', 't/a'])
+[INFO] 2026-09-26 01:13:34 src.blocking: [Blocking:token_name] Generated 1821724 pairs (min_shared=1).
+[INFO] 2026-09-26 01:13:34 src.candidate_generation: Strategy 'token_name' [Country=us] contributed 1801297 new pairs (subtotal: 2107872).
+[INFO] 2026-09-26 01:13:34 src.candidate_generation: Running blocking strategy: token_address [Country=us]
+[INFO] 2026-09-26 01:13:34 src.blocking: [Blocking:token_address] Building inverted index on candidates...
+[INFO] 2026-09-26 01:14:15 src.blocking: Pruned 1174 high-frequency tokens (>2500 occurrences, e.g. ['huntsville', 'wyoming', 'haute', 'sacramento', '210'])
+[INFO] 2026-09-26 01:14:38 src.blocking: [Blocking:token_address] Generated 267500 pairs (min_shared=2).
+[INFO] 2026-09-26 01:14:38 src.candidate_generation: Strategy 'token_address' [Country=us] contributed 242408 new pairs (subtotal: 2350280).
+[INFO] 2026-09-26 01:14:39 src.candidate_generation: Total candidate pairs before post-processing: 4180651
+[INFO] 2026-09-26 01:14:48 src.candidate_generation: Capped candidates: 4180651 -> 3606364 pairs (cap=100 per S1).
+[INFO] 2026-09-26 01:14:48 src.candidate_generation: Candidate generation complete: 3606364 pairs, 49109 unique S1 entities covered.
+[INFO] 2026-09-26 01:15:29 src.pipeline: Training candidate pairs: 3606364
+[INFO] 2026-09-26 01:15:50 validation.evaluate: Candidate recall: 0.6865 (118803 / 173060 true matches covered)
+[INFO] 2026-09-26 01:15:51 src.pipeline: Training candidate recall: 0.6865
+[INFO] 2026-09-26 01:15:51 src.pipeline: [5/6] Extracting features and training model...
+[INFO] 2026-09-26 01:16:06 src.features: Extracting features for 3606364 candidate pairs...
+[INFO] 2026-09-26 01:30:25 src.features: Feature extraction complete: 25 features for 3606364 pairs.
+[INFO] 2026-09-26 01:30:35 src.pipeline: Labels built: 3606364 pairs | 118803 positive (3.3%) | 3487561 negative.
+[INFO] 2026-09-26 01:30:35 src.model: Training model on 3606364 pairs (118803 positive, 3487561 negative)...
+[INFO] 2026-09-26 01:30:35 src.model: Building model: logistic_regression
+[INFO] 2026-09-26 01:30:53 src.model: Training complete.
+[INFO] 2026-09-26 01:30:53 src.model: Model saved to: E:\New folder\Amazon-ML\business-entity-resolution\models\matcher_model.joblib
+[INFO] 2026-09-26 01:30:53 src.pipeline: [6/6] Validating and tuning threshold...
+[INFO] 2026-09-26 01:30:53 src.candidate_generation: Starting candidate generation with strategies: ['exact_name', 'token_name', 'token_address']
+[INFO] 2026-09-26 01:31:14 src.candidate_generation: Total candidate pool: 10320219 records (S2=5034616, S3=5285603)
+[INFO] 2026-09-26 01:31:26 src.candidate_generation: --- Blocking partition: Country='india' (S1=3944, Cand=4133346) ---
+[INFO] 2026-09-26 01:31:26 src.candidate_generation: Running blocking strategy: exact_name [Country=india]
+[INFO] 2026-09-26 01:31:26 src.blocking: [Blocking:exact_name] Building lookup...
+[INFO] 2026-09-26 01:31:42 src.blocking: [Blocking:exact_name] Generated 26659 pairs.
+[INFO] 2026-09-26 01:31:43 src.candidate_generation: Strategy 'exact_name' [Country=india] contributed 26659 new pairs (subtotal: 26659).
+[INFO] 2026-09-26 01:31:43 src.candidate_generation: Running blocking strategy: token_name [Country=india]
+[INFO] 2026-09-26 01:31:43 src.blocking: [Blocking:token_name] Building inverted index on candidates...
+[INFO] 2026-09-26 01:32:01 src.blocking: Pruned 294 high-frequency tokens (>2500 occurrences, e.g. ['foods', 'pune', 'estates', 'healthcare', 'automobiles'])
+[INFO] 2026-09-26 01:32:02 src.blocking: [Blocking:token_name] Generated 178990 pairs (min_shared=1).
+[INFO] 2026-09-26 01:32:03 src.candidate_generation: Strategy 'token_name' [Country=india] contributed 177271 new pairs (subtotal: 203930).
+[INFO] 2026-09-26 01:32:03 src.candidate_generation: Running blocking strategy: token_address [Country=india]
+[INFO] 2026-09-26 01:32:03 src.blocking: [Blocking:token_address] Building inverted index on candidates...
+[INFO] 2026-09-26 01:32:57 src.blocking: Pruned 1019 high-frequency tokens (>2500 occurrences, e.g. ['begumpet', 'pune', 'nashik', 'tal', 'kollam'])
+[INFO] 2026-09-26 01:33:05 src.blocking: [Blocking:token_address] Generated 160124 pairs (min_shared=2).
+[INFO] 2026-09-26 01:33:07 src.candidate_generation: Strategy 'token_address' [Country=india] contributed 155015 new pairs (subtotal: 358945).
+[INFO] 2026-09-26 01:34:04 src.candidate_generation: --- Blocking partition: Country='us' (S1=6056, Cand=6186873) ---
+[INFO] 2026-09-26 01:34:04 src.candidate_generation: Running blocking strategy: exact_name [Country=us]
+[INFO] 2026-09-26 01:34:04 src.blocking: [Blocking:exact_name] Building lookup...
+[INFO] 2026-09-26 01:34:27 src.blocking: [Blocking:exact_name] Generated 60062 pairs.
+[INFO] 2026-09-26 01:34:28 src.candidate_generation: Strategy 'exact_name' [Country=us] contributed 60062 new pairs (subtotal: 60062).
+[INFO] 2026-09-26 01:34:28 src.candidate_generation: Running blocking strategy: token_name [Country=us]
+[INFO] 2026-09-26 01:34:28 src.blocking: [Blocking:token_name] Building inverted index on candidates...
+[INFO] 2026-09-26 01:34:47 src.blocking: Pruned 689 high-frequency tokens (>2500 occurrences, e.g. ['foods', 'wheeler', 'way', 'school', 't/a'])
+[INFO] 2026-09-26 01:34:50 src.blocking: [Blocking:token_name] Generated 366438 pairs (min_shared=1).
+[INFO] 2026-09-26 01:34:51 src.candidate_generation: Strategy 'token_name' [Country=us] contributed 362231 new pairs (subtotal: 422293).
+[INFO] 2026-09-26 01:34:51 src.candidate_generation: Running blocking strategy: token_address [Country=us]
+[INFO] 2026-09-26 01:34:51 src.blocking: [Blocking:token_address] Building inverted index on candidates...
+[INFO] 2026-09-26 01:35:19 src.blocking: Pruned 1174 high-frequency tokens (>2500 occurrences, e.g. ['huntsville', 'wyoming', 'haute', 'sacramento', '210'])
+[INFO] 2026-09-26 01:35:23 src.blocking: [Blocking:token_address] Generated 53882 pairs (min_shared=2).
+[INFO] 2026-09-26 01:35:23 src.candidate_generation: Strategy 'token_address' [Country=us] contributed 48676 new pairs (subtotal: 470969).
+[INFO] 2026-09-26 01:35:23 src.candidate_generation: Total candidate pairs before post-processing: 829914
+[INFO] 2026-09-26 01:35:25 src.candidate_generation: Capped candidates: 829914 -> 718823 pairs (cap=100 per S1).
+[INFO] 2026-09-26 01:35:25 src.candidate_generation: Candidate generation complete: 718823 pairs, 9845 unique S1 entities covered.
+[INFO] 2026-09-26 01:36:00 src.features: Extracting features for 718823 candidate pairs...
+[INFO] 2026-09-26 01:41:10 src.features: Feature extraction complete: 25 features for 718823 pairs.
+[INFO] 2026-09-26 01:41:13 src.pipeline: Labels built: 718823 pairs | 23651 positive (3.3%) | 695172 negative.
+[INFO] 2026-09-26 01:41:14 src.threshold: Threshold tuning complete: best_threshold=0.9500, f0_5=0.8388
+[INFO] 2026-09-26 01:41:14 src.threshold: Threshold 0.9500 saved to: E:\New folder\Amazon-ML\business-entity-resolution\models\threshold.json
+[INFO] 2026-09-26 01:41:14 src.postprocessing: Post-processing predictions for 10000 S1 entities...
+[INFO] 2026-09-26 01:41:19 src.postprocessing: Post-processing complete: 10000 S1 entities | 8618 with matches | 1382 singletons.
+[INFO] 2026-09-26 01:41:20 validation.evaluate: Entity-level F0.5=0.6777 | Precision=0.7412 | Recall=0.6277 | N=10000 | Singletons=312/587 correct
+[INFO] 2026-09-26 01:41:20 src.pipeline: VALIDATION RESULTS: Precision=0.7412 | Recall=0.6277 | F0.5=0.6777
+[INFO] 2026-09-26 01:41:20 src.pipeline: Training pipeline complete in 2130.8 seconds.
+[INFO] 2026-09-26 01:42:13 run_pipeline: Pipeline finished in 2183.3 seconds (36.4 minutes).
+[INFO] 2026-09-26 01:43:42 run_pipeline: ============================================================
+[INFO] 2026-09-26 01:43:42 run_pipeline: Business Entity Resolution Pipeline
+[INFO] 2026-09-26 01:43:42 run_pipeline: Mode: validate
+[INFO] 2026-09-26 01:43:42 run_pipeline: ============================================================
+[INFO] 2026-09-26 01:43:42 src.pipeline: ============================================================
+[INFO] 2026-09-26 01:43:42 src.pipeline: PIPELINE: VALIDATE MODE
+[INFO] 2026-09-26 01:43:42 src.pipeline: ============================================================
+[INFO] 2026-09-26 01:43:42 src.data_loader: Loading training data...
+[INFO] 2026-09-26 01:43:42 src.data_loader: [Source1] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source1.tsv ...
+[INFO] 2026-09-26 01:43:48 src.data_loader: [Source1] Loaded 2206821 records.
+[INFO] 2026-09-26 01:43:49 src.data_loader: [Source2] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source2.tsv ...
+[INFO] 2026-09-26 01:44:04 src.data_loader: [Source2] Loaded 5034616 records.
+[INFO] 2026-09-26 01:44:09 src.data_loader: [Source2] Missing values: business_name=2, business_address=168967
+[INFO] 2026-09-26 01:44:09 src.data_loader: [Source3] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_source3.tsv ...
+[INFO] 2026-09-26 01:44:24 src.data_loader: [Source3] Loaded 5285603 records.
+[INFO] 2026-09-26 01:44:28 src.data_loader: [Source3] Missing values: business_name=13, business_address=175916
+[INFO] 2026-09-26 01:44:28 src.data_loader: [GroundTruth] Loading E:\New folder\Amazon-ML\business-entity-resolution\dataset\train\train_ground_truth.tsv ...
+[INFO] 2026-09-26 01:44:32 src.data_loader: [GroundTruth] Loaded 2206821 records.
+[INFO] 2026-09-26 01:44:33 src.data_loader: [GroundTruth] 2206821 rows | 123247 singletons | 2083574 with matches.
+[INFO] 2026-09-26 01:44:33 src.data_loader: Training data loaded: S1=2206821, S2=5034616, S3=5285603, GT=2206821
+[INFO] 2026-09-26 01:45:19 validation.create_validation: Stratified split: val singletons=18487, val non-singletons=312536
+[INFO] 2026-09-26 01:45:24 validation.create_validation: Validation split (seed=42, fraction=0.15): train=1875798, val=331023 S1 entities.
+[INFO] 2026-09-26 01:45:24 src.preprocessing: [Source2] Preprocessing 5034616 records...
+[INFO] 2026-09-26 01:52:20 src.preprocessing: [Source2] Preprocessing complete.
+[INFO] 2026-09-26 01:52:20 src.preprocessing: [Source3] Preprocessing 5285603 records...
+[INFO] 2026-09-26 01:59:41 src.preprocessing: [Source3] Preprocessing complete.
+[INFO] 2026-09-26 01:59:41 src.preprocessing: [Source1_val] Preprocessing 331023 records...
+[INFO] 2026-09-26 02:00:08 src.preprocessing: [Source1_val] Preprocessing complete.
+[INFO] 2026-09-26 02:00:08 src.candidate_generation: Starting candidate generation with strategies: ['exact_name', 'token_name', 'token_address']
+[INFO] 2026-09-26 02:00:34 src.candidate_generation: Total candidate pool: 10320219 records (S2=5034616, S3=5285603)
+[INFO] 2026-09-26 02:00:38 src.candidate_generation: --- Blocking partition: Country='us' (S1=198573, Cand=6186873) ---
+[INFO] 2026-09-26 02:00:38 src.candidate_generation: Running blocking strategy: exact_name [Country=us]
+[INFO] 2026-09-26 02:00:38 src.blocking: [Blocking:exact_name] Building lookup...
+[INFO] 2026-09-26 02:01:00 src.blocking: [Blocking:exact_name] Generated 2075028 pairs.
+[INFO] 2026-09-26 02:01:00 src.candidate_generation: Strategy 'exact_name' [Country=us] contributed 2075028 new pairs (subtotal: 2075028).
+[INFO] 2026-09-26 02:01:00 src.candidate_generation: Running blocking strategy: token_name [Country=us]
+[INFO] 2026-09-26 02:01:00 src.blocking: [Blocking:token_name] Building inverted index on candidates...
+[INFO] 2026-09-26 02:01:17 src.blocking: Pruned 689 high-frequency tokens (>2500 occurrences, e.g. ['interiors', 'school', 'anchor', 'myers', 'bailey'])
+[INFO] 2026-09-26 02:02:45 src.blocking: [Blocking:token_name] Generated 11992547 pairs (min_shared=1).
+[INFO] 2026-09-26 02:02:47 src.candidate_generation: Strategy 'token_name' [Country=us] contributed 11857572 new pairs (subtotal: 13932600).
+[INFO] 2026-09-26 02:02:47 src.candidate_generation: Running blocking strategy: token_address [Country=us]
+[INFO] 2026-09-26 02:02:47 src.blocking: [Blocking:token_address] Building inverted index on candidates...
+[INFO] 2026-09-26 02:03:16 src.blocking: Pruned 1174 high-frequency tokens (>2500 occurrences, e.g. ['14th', 'montana', 'salisbury', 'plains', 'school'])
+[INFO] 2026-09-26 02:06:16 src.blocking: [Blocking:token_address] Generated 1793629 pairs (min_shared=2).
+[INFO] 2026-09-26 02:06:18 src.candidate_generation: Strategy 'token_address' [Country=us] contributed 1628484 new pairs (subtotal: 15561084).
+[INFO] 2026-09-26 02:06:55 src.candidate_generation: --- Blocking partition: Country='india' (S1=132450, Cand=4133346) ---
+[INFO] 2026-09-26 02:06:55 src.candidate_generation: Running blocking strategy: exact_name [Country=india]
+[INFO] 2026-09-26 02:06:55 src.blocking: [Blocking:exact_name] Building lookup...
+[INFO] 2026-09-26 02:07:11 src.blocking: [Blocking:exact_name] Generated 913098 pairs.
+[INFO] 2026-09-26 02:07:11 src.candidate_generation: Strategy 'exact_name' [Country=india] contributed 913098 new pairs (subtotal: 913098).
+[INFO] 2026-09-26 02:07:11 src.candidate_generation: Running blocking strategy: token_name [Country=india]
+[INFO] 2026-09-26 02:07:11 src.blocking: [Blocking:token_name] Building inverted index on candidates...
+[INFO] 2026-09-26 02:07:22 src.blocking: Pruned 294 high-frequency tokens (>2500 occurrences, e.g. ['exim', 'exports', 'school', 'global', 'first'])
+[INFO] 2026-09-26 02:07:35 src.blocking: [Blocking:token_name] Generated 6024237 pairs (min_shared=1).
+[INFO] 2026-09-26 02:07:36 src.candidate_generation: Strategy 'token_name' [Country=india] contributed 5966137 new pairs (subtotal: 6879235).
+[INFO] 2026-09-26 02:07:36 src.candidate_generation: Running blocking strategy: token_address [Country=india]
+[INFO] 2026-09-26 02:07:36 src.blocking: [Blocking:token_address] Building inverted index on candidates...
+[INFO] 2026-09-26 02:08:00 src.blocking: Pruned 1019 high-frequency tokens (>2500 occurrences, e.g. ['14th', 'school', 'university', 'indira', 'malkajgiri'])
+[INFO] 2026-09-26 02:08:59 src.blocking: [Blocking:token_address] Generated 5350145 pairs (min_shared=2).
+[INFO] 2026-09-26 02:09:00 src.candidate_generation: Strategy 'token_address' [Country=india] contributed 5180966 new pairs (subtotal: 12060201).
+[INFO] 2026-09-26 02:09:04 src.candidate_generation: Total candidate pairs before post-processing: 27621285
+[INFO] 2026-09-26 02:09:48 src.candidate_generation: Capped candidates: 27621285 -> 23854675 pairs (cap=100 per S1).
+[INFO] 2026-09-26 02:09:53 src.candidate_generation: Candidate generation complete: 23854675 pairs, 325479 unique S1 entities covered.
+[INFO] 2026-09-26 02:10:32 src.features: Extracting features for 23854675 candidate pairs...
